@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Carrinho de Compras - Site de Roupas Streetwear</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gustavo, João Vitor, Matheus e Vinicius">
+    <meta name="description" content="Carrinho de Compras do Site de Roupas Streetwear">
+    <meta name="keywords" content="Roupas, Streetwear, Estilo">
+    <link rel="shortcut icon" href="img/icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo3.css"/>
+    <script type="text/javascript" src="js/js.js" defer></script>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="conta.html">Conta</a>
+            <a href="compras.html">Ver Minhas Compras</a>
+            <a href="#" id="tema">Tema</a>
+            <div id="theme-options" style="display: none;">
+                <a href="#" id="tema-claro">Tema Claro</a>
+                <a href="#" id="tema-escuro">Tema Escuro</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-container">
+        <div class="esquerda1">
+            <a class="principal2" href="index.html">&nbsp;Home</a>
+        </div>
+
+        <div class="meio1">
+            <a class="principal">
+                <span class="under">Under&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="clothe">Clothes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </a>
+        </div>
+
+        <div class="search-cart-container">
+            <a href="carrinho.html">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <h1 class="titulo-carrinho">Carrinho de Compras</h1>
+    
+    <div id="cart-items" class="carrinho-container">
+        <p>Você tem <span id="cart-count">0</span> itens no carrinho.</p>
+
+        <table class="tabela-carrinho">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de produto, adicione lógica para mostrar produtos reais -->
+                <tr>
+                    <td>
+                        <img src="img/HIGH01.jfif" alt="Camisa HIGH" class="produto-img">
+                        <p>Camisa HIGH</p>
+                    </td>
+                    <td>R$ 199,90</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantidade">
+                    </td>
+                    <td>R$ 199,90</td>
+                    <td>
+                        <button class="btn remover">Remover</button>
+                    </td>
+                </tr>
+                <!-- Outros produtos podem ser adicionados aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="total-container">
+        <h2>Total: R$ 199,90</h2>
+        <button class="btn finalizar-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+</body>
+</html>

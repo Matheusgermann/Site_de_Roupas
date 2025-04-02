@@ -1,0 +1,78 @@
+/* Estilo da página de login */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    background-color: #f0f0f0; /* Cor de fundo clara */
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 300px; /* Largura fixa */
+    height: 300px; /* Altura fixa, igual à largura para ser um quadrado */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #00009C; /* Cor azul do site */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox input {
+    width: calc(100% - 20px); /* Ajusta a largura para levar em conta o padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+.btn {
+    width: calc(100% - 20px); /* Ajusta a largura para levar em conta o padding */
+    padding: 10px;
+    background-color: #00009C; /* Cor azul do site */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00007F; /* Tom mais escuro do azul */
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #00009C; /* Cor azul do site */
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

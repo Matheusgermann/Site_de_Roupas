@@ -1,0 +1,353 @@
+@charset "utf-8";
+* {
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box; /* Inclui padding e border na largura e altura dos elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do botão do menu */
+.dropbtn {
+    background-color: #FFFFFF;
+    color: blue;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo do menu suspenso */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Exibe o menu suspenso quando a classe 'show' é adicionada ao contêiner 'dropdown' */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+#theme-options a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#theme-options a:hover {
+    background-color: #f1f1f1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00009C;
+    padding: 20px;
+    width: 100%;
+}
+
+.esquerda1 {
+    display: flex;
+    align-items: center;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.principal2 {
+    font-size: 26px;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    top: 90px; /* Distância do topo */
+    left: 180px; /* Distância da esquerda */
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+html {
+    scroll-behavior: smooth; /* Rola suavemente ao mover a página */
+}
+
+.meio1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.principal {
+    font-size: 44px;
+    color: white;
+}
+
+.under, .clothe {
+    display: block;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.search-cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #00009C;
+    outline: none;
+}
+
+.search-icon, .cart-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-icon {
+    margin-left: 20px;
+}
+
+/* Estilo do contêiner dos filtros */
+.filtro-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens de filtro */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo de cada item de filtro */
+.filtro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 10px;
+    width: 200px; /* Largura fixa para consistência */
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+/* Estilo do rótulo dos filtros */
+.filtro-item label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold; /* Letras em negrito */
+}
+
+/* Estilo do seletor dos filtros */
+.filtro-item select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Estilo do seletor dos filtros quando em foco */
+.filtro-item select:focus {
+    border-color: #00009C; /* Cor do contorno quando em foco */
+}
+
+/* Estilo das opções dentro do seletor */
+.filtro-item select option {
+    padding: 8px;
+}
+
+
+.camisetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.camiseta-item {
+    width: 20%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.camiseta-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+.camiseta-nome, .camiseta-preco {
+    font-size: 18px;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.camiseta-preco {
+    color: blue;
+}
+
+.camiseta-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.camiseta-item2 {
+    width: 25%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.camiseta-img2 {
+    width: 65%;
+    aspect-ratio: 1 / 1;
+    border: 6px solid black;
+    object-fit: cover;
+}
+
+.camiseta-nome2 {
+	padding: 20px;
+    font-size: 35px;
+	font-weight: bold;
+}
+
+.camiseta-item2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.camisetas-container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.coluna-esquerda {
+    width: 50%;
+    text-align: center;
+}
+
+.coluna-direita {
+    width: 50%;
+    padding-left: 0px; /* Espaçamento entre imagem e texto */
+}
+
+.camiseta-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.camiseta-preco2 {
+    font-size: 28px;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.comprar-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.comprar-btn:hover {
+    background-color: darkblue;
+}
+
+.camiseta-descricao {
+    font-size: 18px;
+    color: #555;
+	margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
+.camiseta-tamanhos {
+    margin-top: 20px;
+}
+
+.tamanhos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.tamanho-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.disponivel {
+    background-color: blue;
+}
+
+.esgotado {
+    background-color: gray;
+	
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+

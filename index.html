@@ -1,0 +1,147 @@
+<html lang="pt-br">
+	<head>
+		<title>Site de Roupas Streetwear</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Gustavo, João Vitor, Matheus e Vinicius">
+		<meta name="description" content="Site de Roupas Streetwear">
+		<meta name="keywords" content="Roupas, Streetwear, Estilo">
+		<link rel="shortcut icon" href="img/icone.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/js.js" defer></script>
+	</head>
+	
+		<body>
+			<div class="dropdown">
+				<button class="dropbtn">
+					<i class="fas fa-bars"></i>
+				</button>
+					<div class="dropdown-content" id="dropdownContent">
+						<a href="conta.html">Conta</a>
+						<a href="compras.html">Ver Minhas Compras</a>
+						<a href="#" id="tema">Tema</a>
+							<div id="theme-options" style="display: none;">
+								<a href="#" id="tema-claro">Tema Claro</a>
+								<a href="#" id="tema-escuro">Tema Escuro</a>
+							</div>
+					</div>
+			</div>
+
+			<div class="header-container">
+				<div class="esquerda1">
+					<body id="top">
+						<div class="esquerda1">
+							<a class="principal2">&nbsp;Home</a>
+						</div>
+					</body>
+				</div>
+
+				<div class="meio1">
+					<a class="principal">
+						<span class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under</span>
+						<span class="clothe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clothes</span>
+					</a>
+				</div>
+
+				<div class="search-cart-container">
+					<input type="text" id="search" class="search-input" placeholder="Procurar...">
+					<i class="fas fa-search search-icon"></i>
+					<a href="carrinho.html">
+					<i class="fas fa-shopping-cart cart-icon"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="filtro-container">
+				<div class="filtro-item">
+					<label for="marca-select">Marcas:</label>
+						<select id="marca-select" onchange="aplicarFiltros()">
+							<option value="todas">Todas as Marcas</option>
+							<option value="HIGH">HIGH</option>
+							<option value="Sufgang">Sufgang</option>
+							<option value="Vlone">Vlone</option>
+						</select>
+				</div>
+				<div class="filtro-item">
+					<label for="tamanho-select">Tamanhos:</label>
+						<select id="tamanho-select" onchange="aplicarFiltros()">
+							<option value="todos">Todos os Tamanhos</option>
+							<option value="P">P</option>
+							<option value="M">M</option>
+							<option value="G">G</option>
+							<option value="GG">GG</option>
+						</select>
+				</div>
+			</div>
+
+			<div class="camisetas-container">
+				<div class="camiseta-item" data-marca="HIGH" data-tamanho="M">
+					<a href="produto-high1.html">
+						<img src="img/HIGH01.jfif" alt="Camisa HIGH" class="camiseta-img">
+							<p class="camiseta-nome">Camisa HIGH</p>
+							<p class="camiseta-preco">R$ 199,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Vlone" data-tamanho="G">
+					<a href="produto-vlone1.html">
+						<img src="img/VLONE01.jfif" alt="Camisa VLONE" class="camiseta-img">
+							<p class="camiseta-nome">Camisa VLONE</p>
+							<p class="camiseta-preco">R$ 249,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Sufgang" data-tamanho="P">
+					<a href="produto-sufgang1.html">
+						<img src="img/SUFGANG01.jfif" alt="Camisa SUFGANG" class="camiseta-img">
+							<p class="camiseta-nome">Camisa SUFGANG</p>
+							<p class="camiseta-preco">R$ 179,90</p>
+					</a>
+				</div>
+			</div>
+			<div class="camisetas-container">
+				<div class="camiseta-item" data-marca="HIGH" data-tamanho="GG">
+					<a href="produto-high2.html">
+						<img src="img/HIGH02.jfif" alt="Camisa HIGH" class="camiseta-img">
+							<p class="camiseta-nome">Camisa HIGH</p>
+							<p class="camiseta-preco">R$ 229,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Vlone" data-tamanho="P">
+					<a href="produto-vlone2.html">
+						<img src="img/VLONE02.jfif" alt="Camisa VLONE" class="camiseta-img">
+							<p class="camiseta-nome">Camisa VLONE</p>
+							<p class="camiseta-preco">R$ 339,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Sufgang" data-tamanho="G">
+					<a href="produto-sufgang2.html">
+						<img src="img/SUFGANG02.jfif" alt="Camisa SUFGANG" class="camiseta-img">
+							<p class="camiseta-nome">Camisa SUFGANG</p>
+							<p class="camiseta-preco">R$ 149,90</p>
+					</a>
+				</div>
+			</div>
+			<div class="camisetas-container">
+				<div class="camiseta-item" data-marca="HIGH" data-tamanho="P">
+					<a href="produto-high3.html">
+						<img src="img/HIGH03.jfif" alt="Camisa HIGH" class="camiseta-img">
+							<p class="camiseta-nome">Camisa HIGH</p>
+							<p class="camiseta-preco">R$ 199,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Vlone" data-tamanho="M">
+					<a href="produto-vlone3.html">
+						<img src="img/VLONE03.jfif" alt="Camisa VLONE" class="camiseta-img">
+							<p class="camiseta-nome">Camisa VLONE</p>
+							<p class="camiseta-preco">R$ 249,90</p>
+					</a>
+				</div>
+				<div class="camiseta-item" data-marca="Sufgang" data-tamanho="GG">
+					<a href="produto-sufgang3.html">
+						<img src="img/SUFGANG03.jfif" alt="Camisa SUFGANG" class="camiseta-img">
+							<p class="camiseta-nome">Camisa SUFGANG</p>
+							<p class="camiseta-preco">R$ 179,90</p>
+					</a>
+				</div>
+			</div>
+		</body>
+</html>

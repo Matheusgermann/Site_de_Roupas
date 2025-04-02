@@ -1,0 +1,200 @@
+<html lang="pt-br">
+  <head>
+    <title>Site de Roupas Streetwear</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gustavo, João Vitor, Matheus e Vinicius">
+    <meta name="description" content="Site de Roupas Streetwear">
+    <meta name="keywords" content="Roupas, Streetwear, Estilo">
+    <link rel="shortcut icon" href="img/icone.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script type="text/javascript" src="js/js.js" defer></script>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="dropdown-content" id="dropdownContent">
+        <a href="conta.html">Conta</a>
+        <a href="compras.html">Ver Minhas Compras</a>
+        <a href="#" id="tema">Tema</a>
+        <div id="theme-options" style="display: none;">
+          <a href="#" id="tema-claro">Tema Claro</a>
+          <a href="#" id="tema-escuro">Tema Escuro</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <div class="esquerda1">
+        <body id="top">
+          <div class="esquerda1">
+            <a class="principal2" href="index.html">&nbsp;Home</a>
+          </div>
+        </body>
+      </div>
+
+      <div class="meio1">
+        <a class="principal">
+          <span class="under">Under&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span class="clothe">Clothes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </a>
+      </div>
+
+      <div class="search-cart-container">
+        <a href="carrinho.html">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="camisetas-container2">
+      <!-- Coluna da imagem -->
+      <div class="coluna-esquerda">
+        <img
+          src="img/VLONE01.jfif"
+          alt="Camisa VLONE"
+          class="camiseta-img2"
+        />
+      </div>
+
+      <!-- Coluna da descrição -->
+      <div class="coluna-direita">
+        <h1 class="camiseta-titulo">Camisa VLONE</h1>
+        <p class="camiseta-preco2">R$ 249,90</p>
+        <button class="comprar-btn" onclick="adicionarAoCarrinho()">Comprar</button>
+        <p class="camiseta-descricao">
+          Esta é uma camisa da marca VLONE, com estilo streetwear de alta
+          qualidade, disponível em diferentes tamanhos. Feita com material
+          confortável e resistente, perfeita para o dia a dia.
+        </p>
+
+<!-- Parte da tabela de medidas abaixo da descrição -->
+<div class="camiseta-tamanhos">
+  <p>Tamanhos:</p>
+  <div class="tamanhos">
+    <div class="tamanho-item esgotado">P</div>
+    <div class="tamanho-item esgotado">M</div>
+    <div class="tamanho-item disponivel">G</div>
+    <div class="tamanho-item esgotado">GG</div>
+  </div>
+</div>
+
+<!-- Reposicionando a tabela de medidas mais para baixo -->
+<div class="tabela-medidas" style="margin-top: 20px;">
+  <h2>Tabela de Medidas</h2>
+  <table class="medidas-table">
+    <thead>
+	<style>
+      .tabela-medidas {
+        margin-top: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .tabela-medidas h2 {
+        font-size: 24px;
+        color: #00009C;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .tabela-medidas table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      .tabela-medidas th, 
+      .tabela-medidas td {
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+      }
+
+      .tabela-medidas th {
+        background-color: #00009C;
+        color: white;
+        font-weight: bold;
+      }
+
+      .tabela-medidas td {
+        background-color: #f9f9f9;
+      }
+
+      .tabela-medidas tr:nth-child(even) td {
+        background-color: #f1f1f1;
+      }
+
+      .tabela-medidas tr:hover td {
+        background-color: #e0e0e0;
+      }
+
+      .tamanhos {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .tamanho-item {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #00009C;
+        cursor: pointer;
+      }
+
+      .tamanho-item.disponivel {
+        background-color: #00009C;
+        color: white;
+      }
+
+      .tamanho-item.esgotado {
+        background-color: #ddd;
+        color: black;
+        cursor: not-allowed;
+      }
+    </style>
+      <tr>
+        <th>Tamanho</th>
+        <th>Busto (cm)</th>
+        <th>Cintura (cm)</th>
+        <th>Quadril (cm)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P</td>
+        <td>88 - 92</td>
+        <td>68 - 72</td>
+        <td>94 - 98</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>93 - 96</td>
+        <td>73 - 76</td>
+        <td>99 - 102</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>97 - 100</td>
+        <td>77 - 80</td>
+        <td>103 - 106</td>
+      </tr>
+      <tr>
+        <td>GG</td>
+        <td>101 - 104</td>
+        <td>81 - 84</td>
+        <td>107 - 110</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

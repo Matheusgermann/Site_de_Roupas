@@ -1,0 +1,205 @@
+@charset "utf-8";
+* {
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box; /* Inclui padding e border na largura e altura dos elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do botão do menu */
+.dropbtn {
+    background-color: #FFFFFF;
+    color: blue;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo do menu suspenso */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Exibe o menu suspenso quando a classe 'show' é adicionada ao contêiner 'dropdown' */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+#theme-options a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#theme-options a:hover {
+    background-color: #f1f1f1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00009C;
+    padding: 20px;
+    width: 100%;
+}
+
+.esquerda1 {
+    display: flex;
+    align-items: center;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.principal2 {
+    font-size: 26px;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    top: 90px; /* Distância do topo */
+    left: 180px; /* Distância da esquerda */
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+html {
+    scroll-behavior: smooth; /* Rola suavemente ao mover a página */
+}
+
+.meio1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.principal {
+    font-size: 44px;
+    color: white;
+}
+
+.under, .clothe {
+    display: block;
+	font-weight: bold; /* Define o texto como negrito */
+}
+
+.search-cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #00009C;
+    outline: none;
+}
+
+.search-icon, .cart-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-icon {
+    margin-left: 20px;
+}
+
+.titulo-carrinho {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.carrinho-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-carrinho th,
+.tabela-carrinho td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-carrinho th {
+    background-color: #00009C;
+    color: #fff;
+}
+
+.produto-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.quantidade {
+    width: 50px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.total-container {
+    text-align: center; /* Muda o alinhamento para o centro */
+    margin-top: 20px;
+}
+
+
+.finalizar-compra {
+    background-color: #28a745;
+}
+
+.finalizar-compra:hover {
+    background-color: #218838;
+}
